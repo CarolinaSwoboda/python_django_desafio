@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familiar</title>
+</head>
+<body>
+    <h1 style="color: green;"> Familiares de Marcelo</h1>
+    {% for persona in personas %}
+    <p> Mi nombre es <h style="color: blue;">{{persona.nombre}} {{persona.apellido}}</h>. Nací el <h style="color: purple;">{{persona.fecha}}</h>, tengo <h style="color: brown;">{{persona.edad}} años</h> y soy <h style="color: red;">{{persona.get_relacion_display}}</h> de Marcelo.</p>
+
+    {% endfor %}
+    
+</body>
+</html>
